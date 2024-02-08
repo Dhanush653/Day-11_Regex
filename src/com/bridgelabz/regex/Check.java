@@ -13,7 +13,6 @@ public class Check {
     public void firstname(){
         Pattern pattern = Pattern.compile(check);
         Matcher matcher = pattern.matcher(val);
-
         if(matcher.matches())
         {
             System.out.println("Valid first Name");
@@ -44,6 +43,18 @@ public class Check {
         else{
             System.out.println("Not a Valid Email");
         }
+    }
+    // Phone Number Validation
+    public void phonenumber(){
+        Pattern pattern = Pattern.compile(check);
+        Matcher matcher = pattern.matcher(val);
+        if(matcher.matches()){
+            System.out.println("Its a Valid Phone Number");
+        }
+        else{
+            System.out.println("Not a Valid Phone Number");
+        }
+
     }
 }
 

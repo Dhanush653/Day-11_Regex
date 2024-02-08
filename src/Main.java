@@ -2,9 +2,9 @@ import com.bridgelabz.regex.Check;
 
 public class Main {
     public static void main(String[] args) {
-        String email = "dkk.ki@gmail.com";
-        String emailregex = "[a-zA-Z0-9\\.\\_\\%\\+\\-]+[@][a-zA-Z0-9\\.\\-]+[\\.][a-zA-Z]{2,}";
-        Check emailobj = new Check(email, emailregex);
-        emailobj.email();
+        String Phone = "91 1234567899";
+        String Phoneregex = "[0-9]{2}[ ][0-9]{10}";
+        Check phone = new Check(Phone, Phoneregex);
+        phone.phonenumber();
     }
 }
