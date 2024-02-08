@@ -60,10 +60,10 @@ public class Check {
         Pattern pattern = Pattern.compile(check);
         Matcher matcher = pattern.matcher(val);
         if(matcher.matches()){
-            System.out.println("Its a Valid Password");
+            System.out.println("It's a Valid Password");
         }
         else{
-            System.out.println("Its Not a Valid Password");
+            System.out.println("It's Not a Valid Password");
         }
     }
 
