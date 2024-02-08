@@ -54,7 +54,18 @@ public class Check {
         else{
             System.out.println("Not a Valid Phone Number");
         }
-
     }
+    // Password validation
+    public void passwordvalidator(){
+        Pattern pattern = Pattern.compile(check);
+        Matcher matcher = pattern.matcher(val);
+        if(matcher.matches()){
+            System.out.println("Its a Valid Password");
+        }
+        else{
+            System.out.println("Its Not a Valid Password");
+        }
+    }
+
 }
 
