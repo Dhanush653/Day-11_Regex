@@ -33,5 +33,17 @@ public class Check {
         else
             System.out.println("Not a Valid Last Name");
     }
+    // email validation
+    public void email(){
+        Pattern pattern = Pattern.compile(check);
+        Matcher matcher = pattern.matcher(val);
+
+        if(matcher.matches()){
+            System.out.println("Valid Email");
+        }
+        else{
+            System.out.println("Not a Valid Email");
+        }
+    }
 }
 
