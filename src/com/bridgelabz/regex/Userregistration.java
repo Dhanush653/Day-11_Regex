@@ -1,11 +1,11 @@
 package com.bridgelabz.regex;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
-public class Check {
+public class Userregistration {
     String val;
     String check;
 
-    public Check(String val, String check) {
+    public Userregistration(String val, String check) {
         this.val = val;
         this.check = check;
     }
@@ -17,9 +17,9 @@ public class Check {
         {
             System.out.println("Valid first Name");
         }
-        else
+        else {
             System.out.println("Not a Valid First Name");
-
+        }
     }
     // last name validator
     public void lastname(){
@@ -66,6 +66,5 @@ public class Check {
             System.out.println("It's Not a Valid Password");
         }
     }
-
 }
 
