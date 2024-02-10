@@ -20,14 +20,14 @@ public class Userregistration {
             Matcher matcher = pattern.matcher(value);
             try {
                 if (value == null || value.isEmpty()) {
-                    throw new firstnamevalidatingException("This is a Mandatory field");
+                    throw new Userregistrationcustomexception("This is a Mandatory field");
                 } else if (matcher.matches()) {
                     System.out.println("Valid First Name");
                     break;
                 } else {
                     System.out.println("Not a Valid First Name");
                 }
-            } catch (firstnamevalidatingException e) {
+            } catch (Userregistrationcustomexception e) {
                 System.out.println(e.getMessage());
             }
             System.out.println("Please Re-Enter A Valid First Name: ");
@@ -42,14 +42,14 @@ public class Userregistration {
             Matcher matcher = pattern.matcher(value);
             try {
                 if (value == null || value.isEmpty()) {
-                    throw new LastnamevalidatingException("This is a Mandatory field");
+                    throw new Userregistrationcustomexception("This is a Mandatory field");
                 } else if (matcher.matches()) {
                     System.out.println("Valid Last Name");
                     break;
                 } else {
                     System.out.println("Not a Valid Last Name");
                 }
-            } catch (LastnamevalidatingException e) {
+            } catch (Userregistrationcustomexception e) {
                 System.out.println(e.getMessage());
             }
             System.out.println("Please Re-Enter A Valid Last Name: ");
@@ -65,14 +65,14 @@ public class Userregistration {
             Matcher matcher = pattern.matcher(value);
             try {
                 if (value == null || value.isEmpty()) {
-                    throw new emailvalidatingException("This is a Mandatory field");
+                    throw new Userregistrationcustomexception("This is a Mandatory field");
                 } else if (matcher.matches()) {
                     System.out.println("Valid Email");
                     break;
                 } else {
                     System.out.println("Not a Valid Email");
                 }
-            } catch (emailvalidatingException e) {
+            } catch (Userregistrationcustomexception e) {
                 System.out.println(e.getMessage());
             }
             System.out.println("Please Re-Enter A Valid Email: ");
@@ -87,14 +87,14 @@ public class Userregistration {
             Matcher matcher = pattern.matcher(value);
             try {
                 if (value == null || value.isEmpty()) {
-                    throw new PhonevalidatingException("This is a Mandatory field");
+                    throw new Userregistrationcustomexception("This is a Mandatory field");
                 } else if (matcher.matches()) {
                     System.out.println("Valid Phone Number");
                     break;
                 } else {
                     System.out.println("Not a Valid Phone Number");
                 }
-            } catch (PhonevalidatingException e) {
+            } catch (Userregistrationcustomexception e) {
                 System.out.println(e.getMessage());
             }
             System.out.println("Please Re-Enter A Valid Email: ");
@@ -110,14 +110,14 @@ public class Userregistration {
             Matcher matcher = pattern.matcher(value);
             try {
                 if (value == null || value.isEmpty()) {
-                    throw new PasswordvalidationException("This is a Mandatory field");
+                    throw new Userregistrationcustomexception("This is a Mandatory field");
                 } else if (matcher.matches()) {
                     System.out.println("Valid Password");
                     break;
                 } else {
                     System.out.println("Not a Valid Password");
                 }
-            } catch (PasswordvalidationException e) {
+            } catch (Userregistrationcustomexception e) {
                 System.out.println(e.getMessage());
             }
             System.out.println("Please Re-Enter A valid Password");
